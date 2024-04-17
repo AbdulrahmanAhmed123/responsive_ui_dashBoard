@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:responsive_ui_dashboard/widgets/allexpenses_quickinvoice.dart';
 import 'package:responsive_ui_dashboard/widgets/custom_drawer.dart';
+import 'package:responsive_ui_dashboard/widgets/my_card.dart';
 
 class DashBoardDesktobLayout extends StatelessWidget {
   const DashBoardDesktobLayout({super.key});
@@ -16,7 +17,7 @@ class DashBoardDesktobLayout extends StatelessWidget {
           width: 32,
         ),
         Expanded(
-          flex: 3,
+          flex: 2,
           child: CustomScrollView(slivers: [
             SliverFillRemaining(
               hasScrollBody: false,
@@ -33,7 +34,7 @@ class DashBoardDesktobLayout extends StatelessWidget {
         SizedBox(
           width: 24,
         ),
-        Expanded(flex: 2, child: SizedBox()),
+        Expanded( child: Mycard()),
       ],
     );
   }

@@ -19,7 +19,7 @@ class StylesImageApp {
 
   static const String styleImagesLogout = "assets/images/logout.svg";
 
-  static const String styleImagesMask = "assets/images/Mask.svg";
+  static const String styleImagesMask = "assets/images/Mask.png";
 
   static const String styleImagesSetting = "assets/images/setting.svg";
 
