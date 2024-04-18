@@ -19,9 +19,12 @@ final String title;
           ),
         ),
         onPressed: () {},
-        child:  Text(
-          title,
-          style: StylesTextApp.styleSemiBold18.copyWith(color: color),
+        child:  FittedBox(
+          fit: BoxFit.scaleDown,
+          child: Text(
+            title,
+            style: StylesTextApp.styleSemiBold18.copyWith(color: color),
+          ),
         ),
       ),
     );
