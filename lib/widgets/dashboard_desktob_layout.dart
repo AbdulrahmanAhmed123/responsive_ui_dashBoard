@@ -1,9 +1,11 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/rendering.dart';
+import 'package:flutter/widgets.dart';
 import 'package:responsive_ui_dashboard/widgets/allexpenses_quickinvoice.dart';
 import 'package:responsive_ui_dashboard/widgets/card__transaction_history_section.dart';
 import 'package:responsive_ui_dashboard/widgets/custom_drawer.dart';
-
+import 'package:responsive_ui_dashboard/widgets/income_section.dart';
 
 class DashBoardDesktobLayout extends StatelessWidget {
   const DashBoardDesktobLayout({super.key});
@@ -17,7 +19,7 @@ class DashBoardDesktobLayout extends StatelessWidget {
           width: 32,
         ),
         Expanded(
-          flex: 2,
+          flex: 3,
           child: CustomScrollView(slivers: [
             SliverFillRemaining(
               hasScrollBody: false,
@@ -34,7 +36,26 @@ class DashBoardDesktobLayout extends StatelessWidget {
         SizedBox(
           width: 24,
         ),
-        Expanded( child:MyCardTransactionHistorySection()),
+        Expanded(
+          flex: 2,
+          child: SingleChildScrollView(
+
+            padding: EdgeInsets.zero,
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+            SizedBox(
+              height: 40,
+            ),
+            MyCardTransactionHistorySection(),
+            SizedBox(
+              height: 24,
+            ),
+            IncomeSection(),
+                        ],
+                      ),
+          ),
+        ),
       ],
     );
   }

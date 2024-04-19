@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_ui_dashboard/utlies/styles_app.dart';
 import 'package:responsive_ui_dashboard/widgets/animated_dot_indecator_list.dart';
-import 'package:responsive_ui_dashboard/widgets/custom_container_back_ground.dart';
 import 'package:responsive_ui_dashboard/widgets/my_card_page_view.dart';
 
 class MyCardSection extends StatefulWidget {
@@ -30,25 +29,20 @@ int currentPageIndex = 0;
   }
   @override
   Widget build(BuildContext context) {
-    return  CustomContainerBackGround(
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-         
-         const Text('My card',style:StylesTextApp.styleSemiBold20 ,),
-          const SizedBox(
-            height: 20,
-          ),
-            MyCardPageView(controllerPage: controllerPage,),
-          const SizedBox(
-            height: 20,
-          ),DotsIndecatorList(currentPageIndex: currentPageIndex,),
-           const Divider(
-            height: 40,
-            color: Color(0xfff1f1f1),
-          ),
-        ],
-      ),
+    return  Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+       
+       const Text('My card',style:StylesTextApp.styleSemiBold20 ,),
+        const SizedBox(
+          height: 20,
+        ),
+          MyCardPageView(controllerPage: controllerPage,),
+        const SizedBox(
+          height: 20,
+        ),DotsIndecatorList(currentPageIndex: currentPageIndex,),
+        
+      ],
     );
   }
 }
