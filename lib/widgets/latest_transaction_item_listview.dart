@@ -6,17 +6,17 @@ import 'package:responsive_ui_dashboard/widgets/user_info_list_tile.dart';
 class LatestTransactionItemListView extends StatelessWidget {
   const LatestTransactionItemListView({super.key});
   static List<UserInfoListTileModel> listUserInfoListTileModel = [
-    UserInfoListTileModel(
+    const UserInfoListTileModel(
       assetImage: StylesImageApp.styleImagesAvater,
       title: 'Lekan Okeowo',
       subTitle: 'demo@gmail.com',
     ),
-    UserInfoListTileModel(
+    const UserInfoListTileModel(
       assetImage: StylesImageApp.styleImagesAvater1,
       title: 'Lekan Okeowo',
       subTitle: 'demo@gmail.com',
     ),
-    UserInfoListTileModel(
+    const UserInfoListTileModel(
       assetImage: StylesImageApp.styleImagesAvater2,
       title: 'Lekan Okeowo',
       subTitle: 'demo@gmail.com',

@@ -39,14 +39,14 @@ class _IncomeChartState extends State<IncomeChart> {
       pieTouchData: PieTouchData(
         enabled: true,
         touchCallback: (FlTouchEvent event, pieTouchResponse) {
-          if (pieTouchResponse == null || pieTouchResponse.touchedSection == null||pieTouchResponse.touchedSection!.touchedSectionIndex==-1) {
-            setState(() {
-              activeIndex = -1;
-            });
-            return;
-          }
+          // if (pieTouchResponse == null || pieTouchResponse.touchedSection == null||pieTouchResponse.touchedSection!.touchedSectionIndex==-1) {
+          //   setState(() {
+              
+          //   });
+            activeIndex =pieTouchResponse?.touchedSection?.touchedSectionIndex?? -1;
+          activeIndex = pieTouchResponse!.touchedSection!.touchedSectionIndex;
           setState(() {
-            activeIndex = pieTouchResponse.touchedSection!.touchedSectionIndex;
+            
           });
         },
       ),

@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:responsive_ui_dashboard/utlies/images_app.dart';
@@ -66,8 +65,8 @@ class Mycard extends StatelessWidget {
                   ],
                 ),
               ),
-              Flexible(
-                child: const SizedBox(
+              const Flexible(
+                child: SizedBox(
                   height: 24,
                 ),
               ),

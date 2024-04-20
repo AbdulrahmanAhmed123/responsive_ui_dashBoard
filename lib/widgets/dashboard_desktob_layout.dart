@@ -1,6 +1,5 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
 import 'package:flutter/widgets.dart';
 import 'package:responsive_ui_dashboard/widgets/allexpenses_quickinvoice.dart';
 import 'package:responsive_ui_dashboard/widgets/card__transaction_history_section.dart';
@@ -25,7 +24,7 @@ class DashBoardDesktobLayout extends StatelessWidget {
               hasScrollBody: false,
               child: Row(
                 children: [
-                  Flexible(
+                  Expanded(
                     child: AllExpensesQuickInvoice(),
                   ),
                 ],
