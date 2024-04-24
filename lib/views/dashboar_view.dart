@@ -21,7 +21,6 @@ class _ResponsiveDashBoardState extends State<ResponsiveDashBoard> {
   @override
   Widget build(BuildContext context) {
     final sizeWidth = MediaQuery.sizeOf(context).width;
-    log('message: ${sizeWidth}');
     return Scaffold(
       key: keyScaffold,
       drawer: const CustomDrawer(),
