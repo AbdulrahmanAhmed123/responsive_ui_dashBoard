@@ -15,14 +15,9 @@ class InActiveDrawer extends StatelessWidget {
   Widget build(BuildContext context) {
     return ListTile(
       leading: SvgPicture.asset(itemModel.image),
-      title: FittedBox(
-                  alignment: Alignment.centerLeft,
-
-        fit: BoxFit.scaleDown,
-        child: Text(
-          itemModel.title,
-          style: StylesTextApp.styleRegular16,
-        ),
+      title: Text(
+        itemModel.title,
+        style: StylesTextApp.styleRegular16(context),
       ),
     );
   }
@@ -40,14 +35,9 @@ class ActiveDrawer extends StatelessWidget {
   Widget build(BuildContext context) {
     return ListTile(
       leading: SvgPicture.asset(itemModel.image),
-      title: FittedBox(
-        fit: BoxFit.scaleDown,
-                  alignment: Alignment.centerLeft,
-
-        child: Text(
-          itemModel.title,
-          style: StylesTextApp.styleBold16,
-        ),
+      title: Text(
+        itemModel.title,
+        style: StylesTextApp.styleBold16(context),
       ),
       trailing: Container(
         width: 3.8,

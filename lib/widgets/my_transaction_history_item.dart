@@ -21,7 +21,7 @@ class MyTransactionHistoryItem extends StatelessWidget {
           fit: BoxFit.scaleDown,
           child: Text(
             myTransactionItemModel.title,
-            style: StylesTextApp.styleSemiBold16
+            style: StylesTextApp.styleSemiBold16(context)
                 .copyWith(color: const Color(0xff064061)),
           ),
         ),
@@ -31,7 +31,7 @@ class MyTransactionHistoryItem extends StatelessWidget {
           fit: BoxFit.scaleDown,
           child: Text(
             myTransactionItemModel.amount,
-            style: StylesTextApp.styleSemiBold20.copyWith(
+            style: StylesTextApp.styleSemiBold20(context).copyWith(
                 color: myTransactionItemModel.transactionStatus ==
                         TransactionStatus.deposit
                     ? const Color(0xff7DD97B)
@@ -44,7 +44,7 @@ class MyTransactionHistoryItem extends StatelessWidget {
           fit: BoxFit.scaleDown,
           child: Text(
             myTransactionItemModel.date,
-            style: StylesTextApp.styleRegular16
+            style: StylesTextApp.styleRegular16(context)
                 .copyWith(color: const Color(0xffAAAAAA)),
           ),
         ),

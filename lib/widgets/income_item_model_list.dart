@@ -25,14 +25,14 @@ class IncomeItemDetailsModel extends StatelessWidget {
           alignment: Alignment.centerLeft,
           child: Text(
             incomeItemModel.title,
-            style: StylesTextApp.styleRegular16,
+            style: StylesTextApp.styleRegular16(context),
           )),
       trailing: FittedBox(
           fit: BoxFit.scaleDown,
           alignment: Alignment.centerRight,
           child: Text(
             incomeItemModel.amount,
-            style: StylesTextApp.styleMedium16,
+            style: StylesTextApp.styleMedium16(context),
           )),
     );
   }

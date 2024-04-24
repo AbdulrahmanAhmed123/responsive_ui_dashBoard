@@ -9,7 +9,7 @@ final String hint;
     return TextField(
       decoration: InputDecoration(
           hintStyle:
-              StylesTextApp.styleRegular16.copyWith(color: const Color(0xffaaaaaa)),
+              StylesTextApp.styleRegular16(context).copyWith(color: const Color(0xffaaaaaa)),
           hintText: hint,
           fillColor: const Color(0xfffafafa),
           border: builtborder(),

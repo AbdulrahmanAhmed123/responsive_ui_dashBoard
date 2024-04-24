@@ -11,13 +11,13 @@ class MyTransactionHistoryHeader extends StatelessWidget {
 
       mainAxisAlignment:MainAxisAlignment.spaceBetween ,
       children: [
-        const Expanded(
+         Expanded(
           child: FittedBox(
             alignment: AlignmentDirectional.centerStart,
             fit: BoxFit.scaleDown,
             child: Text(
               'Transaction History',
-              style: StylesTextApp.styleSemiBold20,
+              style: StylesTextApp.styleSemiBold20(context),
             ),
           ),
         ),
@@ -28,7 +28,7 @@ class MyTransactionHistoryHeader extends StatelessWidget {
                 fit: BoxFit.scaleDown,
                 child: Text(
                   'See all',
-                  style: StylesTextApp.styleMedium16
+                  style: StylesTextApp.styleMedium16(context)
                       .copyWith(color: const Color(0xff4EB7F2)),
                 ))),
       ],

@@ -31,9 +31,10 @@ int currentPageIndex = 0;
   Widget build(BuildContext context) {
     return  Column(
       crossAxisAlignment: CrossAxisAlignment.start,
+      mainAxisAlignment: MainAxisAlignment.start,
       children: [
        
-       const Text('My card',style:StylesTextApp.styleSemiBold20 ,),
+        Text('My card',style:StylesTextApp.styleSemiBold20(context) ,),
         const SizedBox(
           height: 20,
         ),

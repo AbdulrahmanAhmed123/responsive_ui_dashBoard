@@ -38,7 +38,7 @@ class AllExpensesActiveItem extends StatelessWidget {
           FittedBox(
             child: Text(
               itemModel.title,
-              style: StylesTextApp.styleSemiBold16.copyWith(color:  Colors.white,),
+              style: StylesTextApp.styleSemiBold16(context).copyWith(color:  Colors.white,),
             ),
           ),
           
@@ -46,7 +46,7 @@ class AllExpensesActiveItem extends StatelessWidget {
           FittedBox(
             child: Text(
               itemModel.date,
-              style: StylesTextApp.styleRegular14.copyWith(color: const Color(0xffFAFAFA)),
+              style: StylesTextApp.styleRegular14(context).copyWith(color: const Color(0xffFAFAFA)),
             ),
           ),
           
@@ -54,7 +54,7 @@ class AllExpensesActiveItem extends StatelessWidget {
           FittedBox(
             child: Text(
               itemModel.price,
-              style: StylesTextApp.styleSemiBold24.copyWith(color:  Colors.white,),
+              style: StylesTextApp.styleSemiBold24(context).copyWith(color:  Colors.white,),
             ),
           ),
         ],
@@ -96,7 +96,7 @@ class AllExpensesINActiveItem extends StatelessWidget {
           FittedBox(
             child: Text(
               itemModel.title,
-              style: StylesTextApp.styleSemiBold16,
+              style: StylesTextApp.styleSemiBold16(context),
             ),
           ),
           
@@ -104,7 +104,7 @@ class AllExpensesINActiveItem extends StatelessWidget {
           FittedBox(
             child: Text(
               itemModel.date,
-              style: StylesTextApp.styleRegular14,
+              style: StylesTextApp.styleRegular14(context),
             ),
           ),
           
@@ -112,7 +112,7 @@ class AllExpensesINActiveItem extends StatelessWidget {
           FittedBox(
             child: Text(
               itemModel.price,
-              style: StylesTextApp.styleSemiBold24,
+              style: StylesTextApp.styleSemiBold24(context),
             ),
           ),
         ],

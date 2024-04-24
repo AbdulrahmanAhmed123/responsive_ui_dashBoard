@@ -1,4 +1,7 @@
+import 'dart:developer';
+
 import 'package:flutter/material.dart';
+import 'package:responsive_ui_dashboard/utlies/sizeconfig.dart';
 import 'package:responsive_ui_dashboard/widgets/adaptive_layout.dart';
 import 'package:responsive_ui_dashboard/widgets/custom_drawer.dart';
 import 'package:responsive_ui_dashboard/widgets/dashboard_desktob_layout.dart';
@@ -18,11 +21,12 @@ class _ResponsiveDashBoardState extends State<ResponsiveDashBoard> {
   @override
   Widget build(BuildContext context) {
     final sizeWidth = MediaQuery.sizeOf(context).width;
+    log('message: ${sizeWidth}');
     return Scaffold(
       key: keyScaffold,
       drawer: const CustomDrawer(),
       backgroundColor: const Color(0xfff7f9fa),
-      appBar: sizeWidth <= 650
+      appBar: sizeWidth <SizeConfig.tabletlayoutWidth
           ? AppBar(
               backgroundColor: Colors.white,
               foregroundColor: Colors.white,
@@ -32,7 +36,7 @@ class _ResponsiveDashBoardState extends State<ResponsiveDashBoard> {
               leading: IconButton(
                 iconSize: 25,
                 onPressed: () {
-                  if (sizeWidth<=650)
+                  if (sizeWidth<=SizeConfig.tabletlayoutWidth)
                   {
                     keyScaffold.currentState!.openDrawer();
                   }

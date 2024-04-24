@@ -11,6 +11,7 @@ class MyCardTransactionHistorySection extends StatelessWidget {
     return const CustomContainerBackGround(
     
         child: Column(
+      mainAxisAlignment: MainAxisAlignment.start,
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         MyCardSection(),

@@ -22,20 +22,12 @@ class Mycard extends StatelessWidget {
                 horizontalTitleGap: 0,
                 minLeadingWidth: 0,
                 minVerticalPadding: 0,
-                title: const FittedBox(
-                  alignment: AlignmentDirectional.centerStart,
-                  fit: BoxFit.scaleDown,
-                  child: Text('Name card'),
-                ),
+                title: const Text('Name card'),
                 titleTextStyle:
-                    StylesTextApp.styleRegular16.copyWith(color: Colors.white),
+                    StylesTextApp.styleRegular16(context).copyWith(color: Colors.white),
                 trailing: SvgPicture.asset(StylesImageApp.styleImagesGallery),
-                subtitle: const FittedBox(
-                  alignment: AlignmentDirectional.centerStart,
-                  fit: BoxFit.scaleDown,
-                  child: Text('Syah Bandi'),
-                ),
-                subtitleTextStyle: StylesTextApp.styleMedium20,
+                subtitle: const Text('Syah Bandi'),
+                subtitleTextStyle: StylesTextApp.styleMedium20(context),
               ),
               const Expanded(
                 child:   SizedBox(
@@ -47,20 +39,15 @@ class Mycard extends StatelessWidget {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.end,
                   children: [
-                     FittedBox(
-                      fit: BoxFit.scaleDown,
-                      child:Text(
-                      '0918 8124 0042 8129',
-                      style: StylesTextApp.styleSemiBold24
+                     Text(
+                     '0918 8124 0042 8129',
+                     style: StylesTextApp.styleSemiBold24(context)
+                         .copyWith(color: Colors.white),
+                                         ),
+                    Text(
+                      '12/20 -124',
+                      style: StylesTextApp.styleRegular16(context)
                           .copyWith(color: Colors.white),
-                    ),),
-                    FittedBox(
-                      fit: BoxFit.scaleDown,
-                      child: Text(
-                        '12/20 -124',
-                        style: StylesTextApp.styleRegular16
-                            .copyWith(color: Colors.white),
-                      ),
                     ),
                   ],
                 ),

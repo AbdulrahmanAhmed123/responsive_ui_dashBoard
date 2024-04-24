@@ -23,7 +23,7 @@ final String title;
           fit: BoxFit.scaleDown,
           child: Text(
             title,
-            style: StylesTextApp.styleSemiBold18.copyWith(color: color),
+            style: StylesTextApp.styleSemiBold18(context).copyWith(color: color),
           ),
         ),
       ),

@@ -20,9 +20,9 @@ class RanageOptions extends StatelessWidget {
       ),
       child:  Row(
         children: [
-          const Text(
+           Text(
             'Monthly',
-            style: StylesTextApp.styleMedium16,
+            style: StylesTextApp.styleMedium16(context),
           ),
           const  SizedBox(width: 1,),
           Transform.rotate(
